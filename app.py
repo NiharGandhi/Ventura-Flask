@@ -7,6 +7,11 @@ from firebase_admin import credentials
 from firebase_admin import db
 import datetime
 from collections import defaultdict
+import os
+
+
+os.environ['DISPLAY'] = ':0'
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 
 app = Flask(__name__)
 
